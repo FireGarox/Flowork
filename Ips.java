@@ -18,7 +18,9 @@ public class Ips {
 
 
 
-        if (ips >= 3.5) {
+        if (ips > 4) {
+        System.out.println("Ips tidak valid");
+        } else if (ips >= 3.5) {
         System.out.println("Beban belajar yang harus dipenuhi adalah 24");
         } else if (ips >= 3) {
         System.out.println("Beban belajar yang harus dipenuhi adalah 22");
@@ -26,6 +28,8 @@ public class Ips {
         System.out.println("Beban belajar yang harus dipenuhi adalah 20");
         } else if (ips < 2) {
         System.out.println("Beban belajar yang harus dipenuhi adalah 18");
+        } else if (ips < 0) {
+        System.out.println("Ips tidak valid");
         }
 
 
